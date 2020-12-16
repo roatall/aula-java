@@ -34,9 +34,14 @@ public class Main {
 		if(simnao == 's') {	
 		Conta conta  = new Corrente();
 		
-		conta.getDonoConta().setNome("Mario Silva");
-		conta.getDonoConta().setCpf("99433233456");
-		conta.setNumConta(123456767);
+		System.out.println("Digite o nome: ");
+		conta.getDonoConta().setNome(teclado.next());
+		teclado.next();
+		System.out.println("Digite o cpf: ");
+		conta.getDonoConta().setCpf(teclado.next());
+		
+		System.out.println("Digite o Numero da conta: ");
+		conta.setNumConta(teclado.nextInt());
 		ContaDAO contaDAO = new ContaDAO();
 		contaDAO.inserir(conta);
 		System.out.println("Contato salvo com sucesso!");
