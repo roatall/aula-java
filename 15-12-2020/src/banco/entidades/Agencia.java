@@ -23,12 +23,12 @@ public class Agencia {
 		System.out.println();
 		System.out.println("Digite o nome do titular: ");
 		String nome = sc.next();
-		System.out.println("Digite o tipo de conta: ");
 		System.out.println("Digite o n° CPF do titlular da conta: ");
 		String cpf = sc.next();
-
+		int numConta = sc.nextInt();
 		contaGenerica.getDonoConta().setNome(nome);
 		contaGenerica.getDonoConta().setCpf(cpf);
+		contaGenerica.getNumConta();
 
 //		System.out.println(contaGenerica.toString());
 
